@@ -32,7 +32,7 @@ if (mode === "es") {
     lang_checkbox.checked = false;
 } else {
     if (document.location.pathname.includes("/es")){
-        document.location.pathname = document.location.pathname.substring(0, document.location.pathname.indexOf("/es"));
+        document.location.pathname = document.location.pathname.replace('/es', '');
     }
     lang_checkbox.checked = true;
 }
@@ -49,7 +49,7 @@ lang_checkbox.addEventListener('change', function(e) {
         setCookie("lang", "es", 365)
     }
 
-    console.log("changed lang to " + (lang_checkbox.checked ? "eu" : "es"));
+    // console.log("changed lang to " + (lang_checkbox.checked ? "eu" : "es"));
 
      location.reload();
 });

@@ -13,8 +13,6 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-
-
 /* -----------------------------HEADER------------------------------------ */
 
 header {
@@ -546,15 +544,19 @@ input[type=checkbox],
 
 
 
+#formularioa input {
+    align-self: flex-end;
+    /* padding-left: 20px; */
+}
 
-#izenaa {
+/* #izenaa {
     margin-left: 19px;
 }
 
 #emaill {
     margin-left: 16px;
     margin-bottom: 15px;
-}
+} */
 
 
 .kontatuaform textarea {
