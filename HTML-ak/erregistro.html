@@ -52,15 +52,15 @@
 
 
 
-        <form>
-            <fieldset class="kontatuaform">
-                <legend>Izena heman</legend>
+        <form  method="get" action="/nireweb.php"  id="formularioa2" >
+            <fieldset class="kontatuaform dark_mode_class">
+                <legend class="dark_mode_class nav-dark-mode"> Izena heman</legend>
                 <label for="izena" class="labelaa">Izena:</label>
-                <input type="text" placeholder="Zure izena idatzi" id="inpuizena" pattern="[a-z-A-Z]{1,15}">
+                <input type="text" placeholder="Zure izena idatzi" id="inpuizena">
                 <label id="Derrigorrezkoa">* Derrigorrezkoa</label>
                 <br>
                 <label for="abizena" class="labelaa">Abizena:</label>
-                <input type="text" placeholder="Zure izena abizena" id="inputabizena" pattern="[a-z-A-Z]{1,15}">
+                <input type="text" placeholder="Zure izena abizena" id="inputabizena">
                 <label id="Derrigorrezkoa">* Derrigorrezkoa</label>
                 <br>
                 <label for="gmail" class="labelaa">Emaila:</label>
@@ -68,14 +68,14 @@
                 <label for="" id="Derrigorrezkoa">* Derrigorrezkoa</label>
                 <br>
                 <label for="pasahitza" class="labelaa">Pasahitza:</label>
-                <input type="password" placeholder="Pasahitza idatzi" id="inputpasa" pattern="[A-Za-z0-9]+">
+                <input type="password" placeholder="Pasahitza idatzi" id="inputpasa">
                 <label id="Derrigorrezkoa">* Derrigorrezkoa</label>
                 <br>
                 <label for="jaiotze" class="labelaa">Jaiotze data:</label>
-                <input type="date" value="2023-02-01" id="inputjaio" pattern="[0-9] {2} \ / [0-9] {2} \ / [0-9] {4} $ ">
+                <input type="date" value="2023-02-01" id="inputjaio">
                 <br>
                 <label for="generoa" class="labelaa">Generoa:</label>
-                <input type="radio" id=”generoa1” name="generoa" value="Gizona" /> Gizona<br />
+                <input type="radio" id=”generoa1” name="generoa" value="Gizona" checked /> Gizona<br />
                 <input type="radio" id=”generoa2” name="generoa" value="Emakumea" /> Emakumea<br />
                 <input type="radio" id=”generoa3” name="generoa" value="Beste bat" /> Beste bat<br />
                 <label class="labelaa">Perfil argazkia:</label>
@@ -83,14 +83,14 @@
                 <br>
                 <label for="taldea" class="labelaa">Taldea:</label>
                 <select id="perfilaukera">
-                    <option>Aukeratu zure taldea</option>
+                    <option disabled selected>Aukeratu zure taldea</option>
                     <option>Talde 1</option>
                     <option>Talde 2</option>
                     <option>Talde 3</option>
                 </select>
                 <br>
                 <label for="kolorea" class="labelaa">Perfil kolorea:</label>
-                <input type="color" value="#ff468c" id="inputkolor">
+                <input type="color" id="inputkolor">
                 <br>
                 <div class="botoiak">
         
@@ -163,6 +163,7 @@
     <a href="#" class="btn-fixed"><img src="../media/flecha.png"></a>
     <script src="../js/dark.js"></script>
     <script src="../../js/langscript.js"></script>
+    <script src="../js/valformerreg.js"></script>
 </body>
 
 </html>

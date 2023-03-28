@@ -1,3 +1,5 @@
+// -----------------------------------KONTAKTUA-------------------------------------
+
 const form = document.querySelector('#formularioa');
 
 const validate = (e) => {
