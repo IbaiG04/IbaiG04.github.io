@@ -1,13 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <link rel="stylesheet" href="../../style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
     <link rel="shortcut icon" href="../media/logosinfondo.png" type="image/x-icon">
-    <title>Registro</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
+
+
     <header class="dark_mode_class">
         <div class="denna">
+
             <div class="logoetaizenburua">
 
                 <a class="animate__animated animate__fadeInLeft" href="../index.html"><img src="../media/logosinfondo.png"></a>
@@ -30,11 +40,11 @@
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../HTML-ak/berriak.html">Noticias</a></li>
-                    <li><a href="../HTML-ak/klasifikazioa.html">Clasificacion</a></li>
-                    <li><a href="../HTML-ak/emaitzak.html">Resultados</a></li>
-                    <li><a href="../HTML-ak/galeria.html">Galeria</a></li>
-                    <li><a href="../HTML-ak/kontaktua.html">Contacto</a></li>
+                    <li><a href="../orriak/berriak.html" id="active">Noticias</a></li>
+                    <li><a href="../orriak/klasifikazioa.html">Clasficacion</a></li>
+                    <li><a href="../orriak/emaitzak.html">Resultados</a></li>
+                    <li><a href="../orriak/galeria.html">Galeria</a></li>
+                    <li><a href="../orriak/kontaktua.html">Contacto</a></li>
                 </ul>
             </nav>
 
@@ -48,60 +58,88 @@
         </div>
 
     </header>
-    <main>
+
+    <main class="berriguztiak">
+
+        <h2 id="h2guztiak">Noticias</h2>
 
 
+        <div class="container">
+            <div class="news-item animate__animated animate__bounceInLeft">
+                <img src="../media/equipo.png">
+                <div class="derecha">
+                    <h3>
+                        Airsoft es declarado oficialmente deporte en los Juegos Olímpicos de París 2024
+                    </h3>
+                    <p>
+                        
+Airsoft ha alcanzado un hito histórico en su evolución como deporte al ser reconocido oficialmente como deporte en los Juegos Olímpicos de París 2024. El Comité Olímpico Internacional ha otorgado a Airsoft el estatus de deporte olímpico, lo que significa que los jugadores de Airsoft tienen ahora la oportunidad de representar a sus países en el mayor torneo del mundo. Un logro que también ha disparado la visibilidad y la popularidad de Airsoft en todo el mundo.
 
-        <form>
-            <fieldset class="kontatuaform dark_mode_class">
-                <legend class="dark_mode_class nav-dark-mode">Apuntate</legend>
-                <label for="izena" class="labelaaa">Nombre:</label>
-                <input type="text" placeholder="Escribe tu nommbre" id="inpuizena" pattern="[a-z-A-Z]{1,15}" title="Bakarrik letrak erabil ditzakezu" required>
-                <label id="Derrigorrezkoa">* Derrigorrezkoa</label>
-                <br>
-                <label for="abizena" class="labelaa">Apellido:</label>
-                <input type="text" placeholder="Escribe tu apellido" id="inputabizena" pattern="[a-z-A-Z]{1,15}" title="Bakarrik letrak erabil ditzakezu" required>
-                <label id="Derrigorrezkoa">* Derrigorrezkoa</label>
-                <br>
-                <label for="gmail" class="labelaa">Email:</label>
-                <input type="email" placeholder="ejemplo@nombre.com" id="inputemail" required>
-                <label for="" id="Derrigorrezkoa">* Derrigorrezkoa</label>
-                <br>
-                <label for="pasahitza" class="labelaa">Pasahitza:</label>
-                <input type="password" placeholder="Escribe tu contraseña" id="inputpasa" required minlength="8"pattern="[A-Za-z0-9]+">
-                <label id="Derrigorrezkoa">* Derrigorrezkoa</label>
-                <br>
-                <label for="jaiotze" class="labelaa">Fecha de nacimiento</label>
-                <input type="date" value="2023-02-01" id="inputjaio" pattern="[0-9] {2} \ / [0-9] {2} \ / [0-9] {4} $ ">
-                <br>
-                <label for="generoa" class="labelaa">Generoa:</label>
-                <input type="radio" id=”generoa1” name="generoa" value="Gizona" checked /> Hombre<br />
-                <input type="radio" id=”generoa2” name="generoa" value="Emakumea" /> Mujer<br />
-                <input type="radio" id=”generoa3” name="generoa" value="Beste bat" /> Otro<br />
-                <label class="labelaa">Foto de perfil:</label>
-                <input type="file" id="inputperfil">
-                <br>
-                <label for="taldea" class="labelaa">Equipo:</label>
-                <select id="perfilaukera">
-                    <option disabled selected>Elije tu equipo</option>
-                    <option>Equipo 1</option>
-                    <option>Equipo 2</option>
-                    <option>Equipo 3</option>
-                </select>
-                <br>
-                <label for="kolorea" class="labelaa">Color de perfil:</label>
-                <input type="color" value="#ff468c" id="inputkolor">
-                <br>
-                <div class="botoiak">
-        
-                    <p><button type="reset" id="borratu">BORRAR</button></p>
-        
-                    <p><button type="submit" id="bidali">ENVIAR</button></p>
-        
+                    </p>
+                    <div class="date">23/01/2023 - 10:45</div>
                 </div>
-            </fieldset>
-        </form>
 
+            </div>
+            <div class="news-item animate__animated animate__bounceInRight">
+                <img src="../media/equipo2.png">
+                <div class="derecha">
+                    <h3>
+
+                        La empresa tecnológica de Silicon Valley lanza una nueva línea de réplicas de armas Airsoft de alta gama
+
+                    </h3>
+                    <p>
+
+                        Una empresa tecnológica de Silicon Valley ha anunciado el lanzamiento de una nueva línea de réplicas de armas Airsoft de alta gama. Estas nuevas réplicas cuentan con tecnología de realidad aumentada, lo que significa que los jugadores pueden experimentar una inmersión total en el juego. Además, estas réplicas se venden a precios muy altos, lo que ha generado controversia entre la comunidad Airsoft. Mientras algunos jugadores están dispuestos a pagar el precio por estas nuevas réplicas de alta tecnología, otros argumentan que todos los Airsoft deben ser accesibles, independientemente de su capacidad de pago.
+                    </p>
+                    <div class="date">20/01/2023 - 11:30</div>
+                </div>
+
+            </div>
+            <div class="news-item animate__animated animate__bounceInLeft">
+                <img src="../media/equipo3.png">
+                <div class="derecha">
+                    <h3>
+
+                        Debate por el uso de réplicas de armas peligrosas en un torneo internacional de Airsoft
+
+                    </h3>
+                    <p>
+
+                        En un torneo internacional europeo de Airsoft, se desató un debate cuando un equipo fue descalificado por utilizar réplicas de armas que violan las reglas del juego y que pueden resultar peligrosas. Los organizadores del torneo se han comprometido a tomar medidas más drásticas para evitar acontecimientos similares en el futuro. La comunidad Airsoft también ha comenzado a discutir sobre la necesidad de una regulación más estricta y el cumplimiento de las normas de seguridad para evitar accidentes.
+
+                    </p>
+                    <div class="date">15/01/2023 - 12:30</div>
+                </div>
+
+            </div>
+            <div class="news-item animate__animated animate__bounceInRight">
+                <img src="../media/equipo4.png">
+                <div class="derecha">
+                    <h3>
+
+                        Nace una nueva web para la compraventa de equipos y accesorios en Airsoft
+
+                    </h3>
+                    <p>
+
+                        Un grupo de jugadores de Airsoft ha creado una nueva web para la compraventa de equipos y accesorios de Airsoft, que rápidamente se ha convertido en el principal mercado en línea para la comunidad Airsoft en todo el mundo. La web cuenta con productos tan variados como réplicas de armas, ropa y equipo de protección y ofrece precios competitivos y un servicio de atención al cliente excepcional. La comunidad Airsoft ha acogido con entusiasmo esta nueva web, que les ofrece una plataforma fácil y fiable para comprar y vender productos relacionados con Airsoft.
+
+
+                    </p>
+                    <div class="date">13/01/2023 - 13:00</div>
+                </div>
+
+            </div>
+
+        </div>
+    <div id="botoi-rss">
+        <button data-text="Awesome" class="button">
+            <a href="../albisteak.xml" target="_blank"><span class="actual-text">&nbsp;RSS&nbsp;</span>
+            <span class="hover-text" aria-hidden="true">&nbsp;RSS&nbsp;</span></a>
+           
+        </button>
+    </div>
     </main>
 
     <footer class="footer-distributed dark_mode_class">
@@ -112,11 +150,11 @@
             <p class="footer-links">
                 <a href="../index.html">Inicio</a>
                 |
-                <a href="../HTML-ak/berriak.html">Noticias</a>
+                <a href="../orriak/berriak.html">Noticias</a>
                 |
-                <a href="../HTML-ak/galeria.html">Galeria</a>
+                <a href="../orriak/galeria.html">Galeria</a>
                 |
-                <a href="../HTML-ak/kontaktua.html">Contacto</a>
+                <a href="../orriak/kontaktua.html">Contacto</a>
             </p>
 
             <p class="footer-company-name">Copyright © 2023 Federacion de Airsoft.
@@ -161,7 +199,7 @@
 				La Federación de Balonmano somos la federación encargada de regular y promover el desarrollo del airsoft.
             </p>
             <br>
-            <a href="../HTML-ak/erregistro.html">
+            <a href="../orriak/erregistro.html">
                 <p id="Erregistratuu">
                     Apuntate!
                 </p>
@@ -178,9 +216,12 @@
         </div>
 
     </footer>
-    <a href="#" class="btn-fixed"><img src="../media/flecha.png"></a>
+        <a class="btn-fixed" onclick="window.scrollTo({top:0, behavior: 'smooth'})"><img src="../media/flecha.png"></a>
+
+
     <script src="../js/dark.js"></script>
     <script src="../../js/langscript.js"></script>
 </body>
+
 
 </html>

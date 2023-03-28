@@ -1,19 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
     <link rel="stylesheet" href="../../style.css">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria</title>
     <link rel="shortcut icon" href="../media/logosinfondo.png" type="image/x-icon">
-
+    <title>Registro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
-
 <body>
-
     <header class="dark_mode_class">
         <div class="denna">
             <div class="logoetaizenburua">
@@ -38,11 +30,11 @@
             <nav>
                 <ul>
                     <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../HTML-ak/berriak.html">Noticias</a></li>
-                    <li><a href="../HTML-ak/klasifikazioa.html">Clasificacion</a></li>
-                    <li><a href="../HTML-ak/emaitzak.html">Resultados</a></li>
-                    <li><a href="../HTML-ak/galeria.html" id="active">Galeria</a></li>
-                    <li><a href="../HTML-ak/kontaktua.html">Contacto</a></li>
+                    <li><a href="../orriak/berriak.html">Noticias</a></li>
+                    <li><a href="../orriak/klasifikazioa.html">Clasificacion</a></li>
+                    <li><a href="../orriak/emaitzak.html">Resultados</a></li>
+                    <li><a href="../orriak/galeria.html">Galeria</a></li>
+                    <li><a href="../orriak/kontaktua.html">Contacto</a></li>
                 </ul>
             </nav>
 
@@ -56,23 +48,59 @@
         </div>
 
     </header>
+    <main>
 
 
-    <main class="galeriaarg">
 
-        <h2>Galeria</h2>
-
-        <div class="grid-container">
-            <div class="argazkiak animate__animated animate__pulse"><img src="../media/galeria1.png"></div>
-            <div class="argazkiak animate__animated animate__pulse"><img src="../media/galeria4.png"></div>
-            <div class="argazkiak animate__animated animate__pulse"><img src="../media/galeria6.png"></div>
-            <div class="argazkiak animate__animated animate__pulse"><img src="../media/galeria8.png"></div>
-            <div class="argazkiak animate__animated animate__pulse"><img src="../media/galeria5.png"></div>
-            <div class="argazkiak animate__animated animate__pulse"><img src="../media/galeria7.png"></div>
-            <div class="argazkiak animate__animated animate__pulse"><img src="../media/galeria2.png"></div>
-            <div class="argazkiak animate__animated animate__pulse"><img src="../media/galeria3.png"></div>
-        </div>
-
+        <form>
+            <fieldset class="kontatuaform dark_mode_class">
+                <legend class="dark_mode_class nav-dark-mode">Apuntate</legend>
+                <label for="izena" class="labelaaa">Nombre:</label>
+                <input type="text" placeholder="Escribe tu nommbre" id="inpuizena" pattern="[a-z-A-Z]{1,15}" title="Bakarrik letrak erabil ditzakezu" required>
+                <label id="Derrigorrezkoa">* Derrigorrezkoa</label>
+                <br>
+                <label for="abizena" class="labelaa">Apellido:</label>
+                <input type="text" placeholder="Escribe tu apellido" id="inputabizena" pattern="[a-z-A-Z]{1,15}" title="Bakarrik letrak erabil ditzakezu" required>
+                <label id="Derrigorrezkoa">* Derrigorrezkoa</label>
+                <br>
+                <label for="gmail" class="labelaa">Email:</label>
+                <input type="email" placeholder="ejemplo@nombre.com" id="inputemail" required>
+                <label for="" id="Derrigorrezkoa">* Derrigorrezkoa</label>
+                <br>
+                <label for="pasahitza" class="labelaa">Pasahitza:</label>
+                <input type="password" placeholder="Escribe tu contraseña" id="inputpasa" required minlength="8"pattern="[A-Za-z0-9]+">
+                <label id="Derrigorrezkoa">* Derrigorrezkoa</label>
+                <br>
+                <label for="jaiotze" class="labelaa">Fecha de nacimiento</label>
+                <input type="date" value="2023-02-01" id="inputjaio" pattern="[0-9] {2} \ / [0-9] {2} \ / [0-9] {4} $ ">
+                <br>
+                <label for="generoa" class="labelaa">Generoa:</label>
+                <input type="radio" id=”generoa1” name="generoa" value="Gizona" checked /> Hombre<br />
+                <input type="radio" id=”generoa2” name="generoa" value="Emakumea" /> Mujer<br />
+                <input type="radio" id=”generoa3” name="generoa" value="Beste bat" /> Otro<br />
+                <label class="labelaa">Foto de perfil:</label>
+                <input type="file" id="inputperfil">
+                <br>
+                <label for="taldea" class="labelaa">Equipo:</label>
+                <select id="perfilaukera">
+                    <option disabled selected>Elije tu equipo</option>
+                    <option>Equipo 1</option>
+                    <option>Equipo 2</option>
+                    <option>Equipo 3</option>
+                </select>
+                <br>
+                <label for="kolorea" class="labelaa">Color de perfil:</label>
+                <input type="color" value="#ff468c" id="inputkolor">
+                <br>
+                <div class="botoiak">
+        
+                    <p><button type="reset" id="borratu">BORRAR</button></p>
+        
+                    <p><button type="submit" id="bidali">ENVIAR</button></p>
+        
+                </div>
+            </fieldset>
+        </form>
 
     </main>
 
@@ -84,11 +112,11 @@
             <p class="footer-links">
                 <a href="../index.html">Inicio</a>
                 |
-                <a href="../HTML-ak/berriak.html">Noticias</a>
+                <a href="../orriak/berriak.html">Noticias</a>
                 |
-                <a href="../HTML-ak/galeria.html">Galeria</a>
+                <a href="../orriak/galeria.html">Galeria</a>
                 |
-                <a href="../HTML-ak/kontaktua.html">Contacto</a>
+                <a href="../orriak/kontaktua.html">Contacto</a>
             </p>
 
             <p class="footer-company-name">Copyright © 2023 Federacion de Airsoft.
@@ -133,7 +161,7 @@
 				La Federación de Balonmano somos la federación encargada de regular y promover el desarrollo del airsoft.
             </p>
             <br>
-            <a href="../HTML-ak/erregistro.html">
+            <a href="../orriak/erregistro.html">
                 <p id="Erregistratuu">
                     Apuntate!
                 </p>
@@ -150,12 +178,10 @@
         </div>
 
     </footer>
-    <a href="#" class="btn-fixed"><img src="../media/flecha.png"></a>
+        <a class="btn-fixed" onclick="window.scrollTo({top:0, behavior: 'smooth'})"><img src="../media/flecha.png"></a>
 
     <script src="../js/dark.js"></script>
     <script src="../../js/langscript.js"></script>
 </body>
-
-
 
 </html>
