@@ -55,6 +55,14 @@
         <form  method="get" action="/nireweb.php"  id="formularioa2" >
             <fieldset class="kontatuaform dark_mode_class">
                 <legend class="dark_mode_class nav-dark-mode"> Izena heman</legend>
+
+                <label for="argazkia" class="labelaa">Perfil argazkia:</label>
+                <br>
+                <br>
+                <img class="imgform" src="/media/descarga.png"/>
+                <br>
+                <input id="pfp" type="file"/>
+                <br>
                 <label for="izena" class="labelaa">Izena:</label>
                 <input type="text" placeholder="Zure izena idatzi" id="inpuizena">
                 <label id="Derrigorrezkoa">* Derrigorrezkoa</label>
@@ -78,8 +86,6 @@
                 <input type="radio" id=”generoa1” name="generoa" value="Gizona" checked /> Gizona<br />
                 <input type="radio" id=”generoa2” name="generoa" value="Emakumea" /> Emakumea<br />
                 <input type="radio" id=”generoa3” name="generoa" value="Beste bat" /> Beste bat<br />
-                <label class="labelaa">Perfil argazkia:</label>
-                <input type="file" id="inputperfil">
                 <br>
                 <label for="taldea" class="labelaa">Taldea:</label>
                 <select id="perfilaukera">
@@ -137,6 +143,17 @@
                 <br>
                 Telefonoa: <a id="link" href="tel:+34944125712">944 12 57 12</a>
             </div>
+
+            <br>
+            <button id="boton-like">
+                <span class="shadow"></span>
+                <span class="edge"></span>
+                <span class="front text">Like eman!
+                </span>
+            </button>
+            <br>
+            <p id="liked">Likes: 0</p>
+
         </div>
         <div class="footer-right">
             <p class="footer-company-about">
@@ -165,6 +182,10 @@
     <script src="../js/dark.js"></script>
     <script src="../../js/langscript.js"></script>
     <script src="../js/valformerreg.js"></script>
+    <script src="../js/imgfrom.js"></script>
+    <script src="../js/like.js"></script>
+
+
 </body>
 
 </html>
