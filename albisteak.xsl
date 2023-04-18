@@ -3,12 +3,12 @@
     <xsl:template match="/">
             <xsl:for-each select="berriak/albistea">
                 <div>
-                    <h2><xsl:value-of select="izenburua"/></h2>
-                    <br/>
-                    <!-- <p><xsl:value-of select="edukia"/></p> -->
+                    <div><xsl:value-of select="container"/></div>
+                    <h3><xsl:value-of select="izenburua"/></h3>
+                    <p><xsl:value-of select="edukia"/></p>
                     <img><xsl:value-of select="linkimg"/></img>
-                    <!-- <div><xsl:value-of select="data"/></div> -->
-                    <!-- <div><xsl:value-of select="idazlea"/></div> -->
+                    <div><xsl:value-of select="data"/></div>
+                    <div><xsl:value-of select="idazlea"/></div>
                 </div>
             </xsl:for-each>
     </xsl:template>
