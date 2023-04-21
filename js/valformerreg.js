@@ -7,13 +7,14 @@ const validate = (e) => {
   const email = document.getElementById('inputemail');
   const pasahitza = document.getElementById('inputpasa');
 
+
   if (!izenaondo(izena.value)) {
-    alert("Mesedez, idatzi zure izena. (15 karaktere gehienez)");
+    alert("Mesedez, idatzi zure izena. (15 letra gehienez)");
     izena.focus();
     return false;
   }
   if (!abizenaondo(abizena.value)) {
-    alert("Mesedez, idatzi zure abizena. (40 karaktere gehienez)");
+    alert("Mesedez, idatzi zure abizena. (40 letra gehienez)");
     abizena.focus();
     return false;
   }
@@ -28,6 +29,7 @@ const validate = (e) => {
     pasahitza.focus();
     return false;
   }
+
 
   // Construct the URL with the form data
   const url = `/nireweb.php?izena=${izena.value}&abizena=${abizena.value}&email=${email.value}&pasahitza=${pasahitza.value}`;
