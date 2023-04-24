@@ -25,7 +25,6 @@ function getCookie(cname) {
 
 var mode = getCookie("lang");
 if (mode === "es") {
-
     if (!document.location.pathname.includes("/es")) {
         document.location.pathname = '/es' + document.location.pathname;
     }
